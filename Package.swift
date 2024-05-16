@@ -10,7 +10,8 @@ let package = Package(
     targets: [
       .target(
         name: "Reusable",
-        path: "Sources"
+        path: "Sources",
+        resources: [.process("PrivacyInfo.xcprivacy")]
       )
     ],
     swiftLanguageVersions: [.v4, .v5]
